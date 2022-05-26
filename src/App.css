@@ -74,11 +74,14 @@
 }
 
 #popular-scroll { 
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
   height: 350px;
   grid-area: popular;
   font-size: 30px;
+  background-image: url("https://www.previewsworld.com/SiteImage/MainImage/STL155177.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #account-overview {
@@ -114,14 +117,46 @@
   /* border: 1px solid blue; */
   padding: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 3fr 3fr;
   justify-items: center;
+  background-color: #1d1d1d;
+}
+
+#navbar a {
+  color: #f0f3f5;
+  text-transform: uppercase;
+  text-align: center;
+  align-self: center;
+  transition: 0.66s;
+  padding: 12px 0;
+}
+
+#nav-buttons a:hover {
+  background-color: #f0f3f5;
+  color: #1d1d1d;
+}
+
+#nav-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#nav-search {
+  align-self: center;
+}
+
+#nav-logo-container {
+  align-self: center;
+}
+
+#nav-logo-container img {
+  width: 150px;
 }
 
 a {
   padding: 0 10px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 #search-input {
@@ -141,10 +176,12 @@ a {
 
 #footer {
   text-align: center;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 100vw;
   height: 150px;
   font-size: 30px;
+  background-color: #1d1d1d;
+  color: #f0f3f5;
 }
 
 /* Footer ---------------------------- */

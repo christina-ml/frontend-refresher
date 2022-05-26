@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react"
 
+import logo from '../images/logo-hort.png';
+
 const SearchResults = () => {
 	const [searchTerms, setSearchTerms] = useState("")
 
@@ -10,6 +12,11 @@ const SearchResults = () => {
 
 	return(
         <div id="navbar">
+			<div id="nav-logo-container">
+				<Link to="/">
+					<img src={logo} alt="wepick logo" />
+				</Link>
+			</div>
 			<div id="nav-search">
 				<form className="search-form">
 					<input
@@ -24,9 +31,9 @@ const SearchResults = () => {
 				</form>
             </div>
             <div id="nav-buttons">
-                <Link to="/">WePick</Link>&nbsp;&nbsp;
-                <Link to="/login">Login</Link>&nbsp;&nbsp;
-                <Link to="/signup">Sign Up</Link>&nbsp;&nbsp;
+                {/* <Link to="/">WePick</Link> */}
+                <Link to="/login">Login</Link>
+                <Link to="/signup">Sign Up</Link>
                 <Link to="/account">My Account</Link>
             </div>
         </div>
